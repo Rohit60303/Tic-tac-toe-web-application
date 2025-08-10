@@ -1,0 +1,99 @@
+/* Basic styling for the tic-tac-toe game */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #8b4513;
+    margin-bottom: 30px;
+}
+
+/* Game mode buttons */
+.game-mode {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #deb887;
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #cd853f;
+    color: white;
+}
+
+button.active {
+    background-color: #8b4513;
+    color: white;
+}
+
+/* Game board styling */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+    width: 310px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f5deb3;
+    border: 2px solid #000000;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell:hover {
+    background-color: #deb887;
+}
+
+/* Game status */
+.status {
+    font-size: 20px;
+    color: #000000;
+    margin: 20px;
+    font-weight: bold;
+}
+
+/* Winner highlight */
+.winner {
+    background-color: #94d41c;
+}
+
+/* Score board */
+.score {
+    background-color: #f5deb3;
+    border: 2px solid #000000;
+    padding: 15px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.score h3 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.score-item {
+    margin: 5px 0;
+    color: #000000;
+    font-size: 16px;
+}

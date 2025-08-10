@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    
+    <div class="game-mode">
+        <button id="playerBtn" class="active" onclick="setGameMode('player')">2 Players</button>
+        <button id="computerBtn" onclick="setGameMode('computer')">vs Computer</button>
+    </div>
+
+    <div class="status" id="status">Player X's Turn</div>
+
+    <div class="board" id="board">
+        <div class="cell" onclick="makeMove(0)"></div>
+        <div class="cell" onclick="makeMove(1)"></div>
+        <div class="cell" onclick="makeMove(2)"></div>
+        <div class="cell" onclick="makeMove(3)"></div>
+        <div class="cell" onclick="makeMove(4)"></div>
+        <div class="cell" onclick="makeMove(5)"></div>
+        <div class="cell" onclick="makeMove(6)"></div>
+        <div class="cell" onclick="makeMove(7)"></div>
+        <div class="cell" onclick="makeMove(8)"></div>
+    </div>
+
+    <button onclick="resetGame()">Reset Game</button>
+
+    <div class="score">
+        <h3>Score</h3>
+        <div class="score-item">Player X: <span id="scoreX">0</span></div>
+        <div class="score-item">Player O: <span id="scoreO">0</span></div>
+        <div class="score-item">Draws: <span id="scoreDraw">0</span></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
